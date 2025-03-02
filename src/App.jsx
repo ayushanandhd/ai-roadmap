@@ -69,7 +69,7 @@ function App() {
         >
           <TransformComponent>
             <div
-              style={{ width: "100vw", height: "100vh", overflow: "visible" }}
+              style={{ width: "100vw", height: "62vh", overflow: "visible" }}
             >
               {" "}
               {/* ✅ Prevent clipping */}

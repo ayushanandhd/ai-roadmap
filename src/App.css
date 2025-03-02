@@ -1,10 +1,9 @@
 .input-container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30vh;
-    background-color: #DDE6ED;
     
 }
 .input-box{
@@ -33,34 +32,21 @@
 }
 
 .chart-container{
-    /* border: 1px solid black; */
-    padding: 0vw;
-    /* margin: 5vw; */
-    margin-top: 0;
-    height: 70vh;
-    background-color: #DDE6ED;
-}
-/* .twrapper{
-    border: 1px solid blue;
-    height: 100%;
-    width: 100%;
-}
-
-.tcomponent{
-    border: 1px solid red;
-    height: 100%;
-    width: 100%;
-} */
-
-.mermaid-diagram{
     border: 1px solid black;
+    padding: 0vw;
+    margin-top: 0;
+    height: 62vh;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
 }
+
 .title-container{
-    background-color: #DDE6ED;
     text-align: center;
     padding: 3vh;
     padding-bottom: 5vh;
-    
+    /* height: 10vh; */
+    font-size: 1rem;
+    /* border: 1px solid black; */
 }
 
 .title{
