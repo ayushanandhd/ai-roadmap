@@ -8,6 +8,7 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 function App() {
   const [input, setInput] = useState("");
   const [chart, setChart] = useState("graph LR;");
+  const [title, setTitle] = useState("")
 
   function handleInput(input) {
     setInput(input);
@@ -26,6 +27,8 @@ function App() {
     console.log(result.response.text());
 
     setChart(result.response.text());
+
+    setTitle(input + " " + "Roadmap")
   }
 
   // zoomable container
@@ -51,25 +54,30 @@ function App() {
           🔥
         </button>
       </div>
-      {/* <div className="chart-container">
-        <MermaidDiagram chart={chart} />
-      </div> */}
-      <div className="chart-container">
-  <TransformWrapper
-    minScale={0.5}
-    maxScale={3}
-    centerOnInit={true}
-    limitToBounds={false}
-    wheel={{ disabled: false }}
-  >
-    <TransformComponent>
-      <div style={{ width: "100vw", height: "100vh", overflow: "visible" }}> {/* ✅ Prevent clipping */}
-        <MermaidDiagram chart={chart} />
-      </div>
-    </TransformComponent>
-  </TransformWrapper>
-</div>
 
+          <div className="title-container">
+            <h1 className="title"> {title} </h1>
+          </div>
+
+      <div className="chart-container">
+        <TransformWrapper
+          minScale={0.5}
+          maxScale={3}
+          centerOnInit={true}
+          limitToBounds={false}
+          wheel={{ disabled: false }}
+        >
+          <TransformComponent>
+            <div
+              style={{ width: "100vw", height: "100vh", overflow: "visible" }}
+            >
+              {" "}
+              {/* ✅ Prevent clipping */}
+              <MermaidDiagram chart={chart} />
+            </div>
+          </TransformComponent>
+        </TransformWrapper>
+      </div>
     </>
   );
 }

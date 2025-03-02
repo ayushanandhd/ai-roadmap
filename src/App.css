@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     height: 30vh;
+    background-color: #DDE6ED;
+    
 }
 .input-box{
     margin: 20px;
@@ -11,6 +13,9 @@
     height: 8vh;
     padding: 10px;
     font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 7px;
 }
 .search-button{
     height: 8vh;
@@ -18,7 +23,7 @@
     padding: 10px;
     font-size: 1.5rem;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 7px;
     border: 1px solid grey;
 }
 
@@ -28,11 +33,12 @@
 }
 
 .chart-container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0vw;
     /* margin: 5vw; */
     margin-top: 0;
     height: 70vh;
+    background-color: #DDE6ED;
 }
 /* .twrapper{
     border: 1px solid blue;
@@ -48,4 +54,15 @@
 
 .mermaid-diagram{
     border: 1px solid black;
+}
+.title-container{
+    background-color: #DDE6ED;
+    text-align: center;
+    padding: 3vh;
+    padding-bottom: 5vh;
+    
+}
+
+.title{
+    text-transform: capitalize;
 }
