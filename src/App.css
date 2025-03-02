@@ -9,16 +9,16 @@
 .input-box{
     margin: 20px;
     width: 30vw;
-    height: 8vh;
-    padding: 10px;
+    height: 10vh;
+    padding: 20px;
     font-size: 1.5rem;
     background-color: transparent;
     border: 1px solid grey;
     border-radius: 7px;
 }
 .search-button{
-    height: 8vh;
-    width: 4vw;
+    height: 10vh;
+    width: 7vw;
     padding: 10px;
     font-size: 1.5rem;
     background-color: transparent;
@@ -52,3 +52,19 @@
 .title{
     text-transform: capitalize;
 }
+
+@media only screen and (max-width: 950px) {
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .search-button{
+        width: 20vw;
+    }
+  }
+  @media only screen and (max-width: 1110px){
+    .input-box{
+        width: 60vw;
+    }
+  }
