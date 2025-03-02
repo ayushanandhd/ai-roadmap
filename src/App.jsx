@@ -27,7 +27,8 @@ function App() {
 
     const result = await model.generateContent(getPrompt(input));
     console.log(result.response.text());
-
+    
+    
     setChart(result.response.text());
 
     setTitle(input + " " + "Roadmap")

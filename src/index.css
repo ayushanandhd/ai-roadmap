@@ -1,9 +1,13 @@
 :root {
-    --primary-color: #F2F9FF;
-    --secondary-color: #black;
-    --text-color: #ffffff;
-    --background-color: #1e1e1e;
+    --background-color: #F2F9FF;
+    --text-color: black;
   }
+
+  [data-theme="dark"] {
+    --background-color: #000205;
+    --text-color: white;
+  }
+
 
 *{
     padding: 0;
@@ -13,7 +17,5 @@
 }
 
 body{
-    background-color: var(--primary-color);
-    /* background-color: black; */
-    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--background-color);
 }

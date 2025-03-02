@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px; /* Increased padding */
+  padding: 50px 80px; /* Increased padding */
   /* background: rgba(255, 255, 255, 0.1); */
   backdrop-filter: blur(10px);
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
@@ -11,7 +11,7 @@
 .navbar-logo {
   font-size: 1.8rem; /* Slightly larger font size */
   font-weight: bold;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .navbar-logo:hover{
@@ -19,7 +19,7 @@
 }
 
 .navbar-links a {
-  color: var(--secondary-color);
+  color: var(--text-color);
   font-size: 1.5rem;
   margin-left: 20px; /* Increased margin */
   transition: color 0.3s;
