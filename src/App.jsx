@@ -29,6 +29,7 @@ function App() {
     setChart(result.response.text());
 
     setTitle(input + " " + "Roadmap")
+    setInput("")
   }
 
   // zoomable container
