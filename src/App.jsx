@@ -4,6 +4,8 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import MermaidDiagram from "./MermaidDiagram";
 import { getPrompt } from "./prompt.js";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import Nav from './Nav';
+
 
 function App() {
   const [input, setInput] = useState("");
@@ -36,6 +38,7 @@ function App() {
 
   return (
     <>
+    <Nav />
       <div className="input-container">
         <input
           className="input-box"
