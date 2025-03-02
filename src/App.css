@@ -52,6 +52,9 @@
 .title{
     text-transform: capitalize;
 }
+.chart-container:active {
+    cursor: grabbing; /* Change to grabbing while dragging */
+  }
 
 @media only screen and (max-width: 950px) {
     .input-container{
