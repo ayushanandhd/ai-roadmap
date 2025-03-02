@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #F2F9FF;
+    --secondary-color: #black;
+    --text-color: #ffffff;
+    --background-color: #1e1e1e;
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -6,5 +13,7 @@
 }
 
 body{
-    background-color: #F2F9FF;
+    background-color: var(--primary-color);
+    /* background-color: black; */
+    transition: background-color 0.3s, color 0.3s;
 }

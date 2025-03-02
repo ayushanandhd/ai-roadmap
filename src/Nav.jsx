@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaInstagram, FaSun, FaMoon } from 'react-icons/fa';
 import './Nav.css';
 
 function Nav() {

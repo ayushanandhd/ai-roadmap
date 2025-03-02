@@ -11,7 +11,7 @@
 .navbar-logo {
   font-size: 1.8rem; /* Slightly larger font size */
   font-weight: bold;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .navbar-logo:hover{
@@ -19,7 +19,7 @@
 }
 
 .navbar-links a {
-  color: #000;
+  color: var(--secondary-color);
   font-size: 1.5rem;
   margin-left: 20px; /* Increased margin */
   transition: color 0.3s;
