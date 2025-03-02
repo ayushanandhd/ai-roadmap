@@ -38,7 +38,7 @@ function App() {
 
   return (
     <>
-    <Nav />
+    <Nav className="nav" />
       <div className="input-container">
         <input
           className="input-box"
