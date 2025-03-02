@@ -1,13 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import { FaSearch } from "react-icons/fa";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import MermaidDiagram from "./MermaidDiagram";
-import { FaArrowRight } from "react-icons/fa";
-import { LuSendHorizontal } from "react-icons/lu";
-import {getPrompt} from "./prompt.js"
-
-
+import { getPrompt } from "./prompt.js";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 function App() {
   const [input, setInput] = useState("");
@@ -32,11 +28,13 @@ function App() {
     setChart(result.response.text());
   }
 
+  // zoomable container
+
   return (
     <>
       <div className="input-container">
         <input
-        className="input-box"
+          className="input-box"
           type="text"
           value={input}
           onChange={(e) => {
@@ -45,19 +43,33 @@ function App() {
           placeholder="What do you want to learn?"
         />
         <button
-        className="search-button"
+          className="search-button"
           onClick={() => {
             handleClick();
           }}
         >
           🔥
-
-
         </button>
       </div>
+      {/* <div className="chart-container">
+        <MermaidDiagram chart={chart} />
+      </div> */}
       <div className="chart-container">
+  <TransformWrapper
+    minScale={0.5}
+    maxScale={3}
+    centerOnInit={true}
+    limitToBounds={false}
+    wheel={{ disabled: false }}
+  >
+    <TransformComponent>
+      <div style={{ width: "100vw", height: "100vh", overflow: "visible" }}> {/* ✅ Prevent clipping */}
         <MermaidDiagram chart={chart} />
       </div>
+    </TransformComponent>
+  </TransformWrapper>
+</div>
+
     </>
   );
 }

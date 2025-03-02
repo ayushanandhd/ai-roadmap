@@ -1,5 +1,5 @@
 .input-container{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +28,24 @@
 }
 
 .chart-container{
-    /* border: 1px solid black; */
-    padding: 10vw;
+    border: 1px solid black;
+    padding: 0vw;
+    /* margin: 5vw; */
+    margin-top: 0;
+    height: 70vh;
+}
+/* .twrapper{
+    border: 1px solid blue;
+    height: 100%;
+    width: 100%;
+}
+
+.tcomponent{
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+} */
+
+.mermaid-diagram{
+    border: 1px solid black;
 }
