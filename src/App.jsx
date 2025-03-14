@@ -11,12 +11,15 @@ function App() {
   const [input, setInput] = useState("");
   const [chart, setChart] = useState("graph LR;");
   const [title, setTitle] = useState("")
+  const [IsDisabled, setIsDisabled] = useState(false)
 
   function handleInput(input) {
     setInput(input);
   }
 
   async function handleClick() {
+    setIsDisabled(true)
+    setTitle("Loading...")
     // console.log(input);
 
     // get mermaid code from gemini
@@ -33,6 +36,7 @@ function App() {
 
     setTitle(input + " " + "Roadmap")
     setInput("")
+    setIsDisabled(false)
   }
 
   // zoomable container
@@ -52,6 +56,7 @@ function App() {
         />
         <button
           className="search-button"
+          disabled={IsDisabled}
           onClick={() => {
             handleClick();
           }}
